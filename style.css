@@ -3,3 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.conditional-section-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.option {
+    grid-column: 1 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.option h1 {
+    font-size: 18px;
+    border-bottom: 2px solid #dbdbdb;
+    width: 100%;
+    padding: 20px;
+    padding-left: 100px;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+.option .active{
+    color: black;
+}
+.option .number-title {
+    font-size: 42px;
+}
+
+.content-box {
+    grid-column: 5 / span 12;
+    background-color: #F7F9FA;
+    padding: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+}
+
+.content-box h1 {
+    font-size: 42px;
+}
+
+.content-box p {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.content-box a {
+    background-color: #1851CA;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px !important;
+    border-radius: 6px;
+}
+
+#option-2, #option-3{
+    display: none;
+}

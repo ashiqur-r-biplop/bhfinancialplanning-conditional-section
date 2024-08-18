@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <section class="conditional-section-container">
+        <div class="grid-layout">
+            <div class="option">
+                <h1 onclick="setActive( this,'option-1')" class="active"> 01<span class="number-title"> Meet</span>
+                </h1>
+                <h1 onclick="setActive( this,'option-2')"> 02<span class="number-title"> Plan</span></h1>
+                <h1 onclick="setActive( this,'option-3')"> 03<span class="number-title"> Grow</span></h1>
+            </div>
+            <div class="content-box">
+                <div id="option-1" class="content">
+                    <h1>01 Meet with us</h1>
+                    <p>No cost, no obligation process where we look at your current situation, analyze your investments
+                        and develop a comprehensive financial plan that works for your lifestyle and goals.
+                    </p>
+                    <a href="https://bhfinancialplanning.ca/contact/">Meet with us</a>
+                </div>
+                <div id="option-2" class="content">
+                    <h1>02 Plan </h1>
+                    <p>We help you structure your investments according to your goals so that you can make your money
+                        grow with confidence.
+                    </p>
+                    <a href="https://bhfinancialplanning.ca/contact/">Meet with us</a>
+                </div>
+                <div id="option-3" class="content">
+                    <h1>03 Grow </h1>
+                    <p>As life changes, so do your goals. To make sure your plan remains in line with your goals, we’ll
+                        meet regularly to review your progress and ensure your plan continues to fit your objectives.
+                    </p>
+                    <a href="https://bhfinancialplanning.ca/contact/">Meet with us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
+
 </html>
